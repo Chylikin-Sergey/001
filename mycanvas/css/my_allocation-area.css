@@ -1,0 +1,23 @@
+.my_allocation-area{
+    pointer-events: none;
+    left: 0;
+    top:0;
+    position: absolute;
+}
+
+.my_allocation-area{
+    box-sizing: border-box;
+    position: absolute;
+    border:1px solid #00c4cc;
+    will-change: transform;
+    contain: strict;
+}
+
+.my_allocation-area::before{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #00c4cc;
+    opacity: .15;
+}

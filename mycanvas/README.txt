@@ -1,0 +1,1 @@
+Проект в рарзработке, цель - попытаться повторить функционал указанный на этом сайте: https://www.canva.com/design/play?type=TABQqs5Kbyc&category=tACFajEYUAM&locale=ru-RU&analyticsCorrelationId=3eb930b7-3ba2-453f-a7bf-d9ab30d7d0e5

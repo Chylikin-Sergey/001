@@ -1,0 +1,16 @@
+
+
+/*Resize*/
+.resize {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2; 
+}
+
+.cursor-move {
+    cursor: move;
+}

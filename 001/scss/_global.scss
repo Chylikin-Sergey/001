@@ -1,0 +1,57 @@
+.container{
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 0 15px 0 15px;
+}
+html,
+body {
+    font-family: 'Nunito', sans-serif;
+    color: rgb(70, 70, 70);
+    height: 100%;
+    font-size: 16px;
+    font-weight: 600;
+}
+h1,h2{
+    font-weight: 600;
+}
+p {
+    margin:0;
+    line-height: 1.5rem;
+}
+button{
+    cursor: pointer;
+}
+
+summary{
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    background-image: linear-gradient(270deg, #ffca70 10%, #ed7161 46%)
+}
+details>summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+}
+
+
+details[open]>summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] summary~* {
+    background-color: rgba(255, 255, 255, 0.432);
+    @include animation(sweep, .5s, ease-in-out, 0s, 1, normal, none)
+}

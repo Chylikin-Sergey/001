@@ -1,0 +1,152 @@
+.lgpd-back{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.lgpd {
+    position: relative;
+    width: 50%;
+    height: auto;
+    background: #fff;
+    z-index: 9999;
+    top: 12%;
+    left: 25%;
+    padding: 30px;
+    font-size: 14px;
+
+    &__anali-checkbox{
+
+        & label::before {
+            content: '';
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid #ffae00; 
+            padding: 10px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        & input:checked+label::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 9px;
+            width: 6px;
+            height: 14px;
+            border: solid #ffae00;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        & label {
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            max-width: 100%;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        & input[type="checkbox"] {
+            display: none;
+        }
+    }
+  
+    &__anali {
+        margin: 20px 0 0 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__conteudo-text {
+        margin: 10px 1px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        max-height: 150px;
+        p {
+            margin: 0;
+            text-align: justify;
+        }
+    }
+   & ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+    &__agreement {
+        button {
+        color: #ffffff !important;
+        background: #ffae00 !important;
+        border: 0;
+        padding: 12px;
+        margin: 4px;
+        outline: none;
+        cursor: pointer;
+    }}
+  
+    
+
+    &__controle {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        max-height: 250px;
+    }
+
+    &__anali-title {
+        width: 25%;
+    }
+
+    &__anali-text {
+        font-size: 12px;
+        margin: 0 15px 0 15px;
+    }
+}
+
+.lgpd-privacy-bar{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(270deg, #ffca70 10%, #ed7161c9 46%);
+    padding:5px;
+
+    &__wrapper{
+         margin: 0 20px 0 20px;
+    }
+    &__text{
+        display: flex;
+        align-items: center;
+        p{
+            margin:0;
+           color:white;
+        }
+    }
+
+    & button{
+        border:none;
+        outline:none;
+        color: white;
+        font-size:14px;
+        cursor: pointer;
+     
+    }
+
+    &__preferences{
+        background-color: transparent;
+        font-weight: bold;
+    }
+    &__agreement{
+        background-color: #ffae00;
+        padding: 12px;
+        margin: 4px;
+    }
+}
+@import "media-lgpd";

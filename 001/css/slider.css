@@ -1,0 +1,74 @@
+/* Slider */
+.slick-slider{}
+/* Slider started */
+.slick-slider.slick-initialized{}
+/* Dots slider */
+.slick-slider.slick-dotted{}
+/* Bounding shell */
+.slick-list {
+    overflow: hidden;
+    padding:60px 0 40px 0;
+
+}
+/* Slide Ribbon */
+.slick-track{
+    display:flex;
+    /* margin:60px 0 40px 0; */
+}
+/* Slide */
+.slick-slide{
+  
+}
+/* Active slide (shown) */
+.slick-slide.slick-active{}
+/* Main slide */
+.slick-slide.slick-current{}
+/* Center slide */
+.slick-slide.slick-center{}
+/* Cloned slide */
+.slick-slide.slick-cloned{}
+/* Arrow */
+.slick-arrow{}
+/* Left arrow */
+.slick-arrow.slick-prev{}
+/* Right arrow */
+.slick-arrow.slick-next{}
+/* Arrow is not active */
+.slick-arrow.slick-disabled{}
+/* Points (shootouts) */
+.slick-dots{}
+.slick-dots li{}
+/* Active point */
+.slick-dots li.slick-active{}
+/* Point element */
+.slick-dots li button{}
+
+.depoimentos-slider{
+    position: relative;
+}
+.depoimentos-slider__item{
+    text-align: center;
+}
+.depoimentos-slider .slick-arrow{
+    position: absolute;
+    top:50%;  
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.depoimentos-slider .slick-arrow.slick-prev{
+    left: -35px;
+    background:url('../images/backgrounds/next.png') 0 0 / 100% no-repeat;
+    transform: scaleX(-1);
+   
+}
+.depoimentos-slider .slick-arrow.slick-next{
+    background:url('../images/backgrounds/next.png') 0 0 / 100% no-repeat;
+    right: -35px;
+}
+.depoimentos-slider .slick-arrow.slick-disabled{
+    opacity:0.2;
+}

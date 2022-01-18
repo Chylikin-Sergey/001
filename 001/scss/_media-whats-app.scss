@@ -1,0 +1,29 @@
+
+@media(max-width:768px){
+    .button-whats-app.open{
+        display: none;
+    }
+    .whats-app-wrapper {
+        .whats-app{
+            right:0;
+        }
+    }
+    .button-whats-app{
+        margin:10px;
+    }
+
+    .whats-app-wrapper{
+        padding: 30px 10px 30px 10px;
+        .whats-app {
+            position: relative;
+            bottom:0;
+            right:0;
+    }
+}
+}
+@media(max-width:576px){
+    .button-whats-app{
+       width: 42px;
+       height: 42px;
+    }
+}

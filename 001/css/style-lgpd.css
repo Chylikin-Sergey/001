@@ -1,0 +1,180 @@
+.lgpd-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.lgpd {
+  position: relative;
+  width: 50%;
+  height: auto;
+  background: #fff;
+  z-index: 9999;
+  top: 12%;
+  left: 25%;
+  padding: 30px;
+  font-size: 14px;
+}
+
+.lgpd__anali-checkbox label::before {
+  content: '';
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #ffae00;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.lgpd__anali-checkbox input:checked + label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #ffae00;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.lgpd__anali-checkbox label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.lgpd__anali-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.lgpd__anali {
+  margin: 20px 0 0 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lgpd__conteudo-text {
+  margin: 10px 1px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 150px;
+}
+
+.lgpd__conteudo-text p {
+  margin: 0;
+  text-align: justify;
+}
+
+.lgpd ::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.lgpd__agreement button {
+  color: #ffffff !important;
+  background: #ffae00 !important;
+  border: 0;
+  padding: 12px;
+  margin: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.lgpd__controle {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 250px;
+}
+
+.lgpd__anali-title {
+  width: 25%;
+}
+
+.lgpd__anali-text {
+  font-size: 12px;
+  margin: 0 15px 0 15px;
+}
+
+.lgpd-privacy-bar {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(10%, #ffca70), color-stop(46%, #ed7161c9));
+  background-image: -webkit-linear-gradient(right, #ffca70 10%, #ed7161c9 46%);
+  background-image: -o-linear-gradient(right, #ffca70 10%, #ed7161c9 46%);
+  background-image: linear-gradient(270deg, #ffca70 10%, #ed7161c9 46%);
+  padding: 5px;
+}
+
+.lgpd-privacy-bar__wrapper {
+  margin: 0 20px 0 20px;
+}
+
+.lgpd-privacy-bar__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lgpd-privacy-bar__text p {
+  margin: 0;
+  color: white;
+}
+
+.lgpd-privacy-bar button {
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.lgpd-privacy-bar__preferences {
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.lgpd-privacy-bar__agreement {
+  background-color: #ffae00;
+  padding: 12px;
+  margin: 4px;
+}
+
+@media (max-width: 1024px) {
+  .lgpd {
+    top: 7%;
+    left: 11%;
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .lgpd__anali-title {
+    width: 100%;
+    text-align: center;
+  }
+}
